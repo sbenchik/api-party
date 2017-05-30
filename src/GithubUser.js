@@ -1,8 +1,40 @@
 import React, { Component } from 'react'
 
-class GithubUser extends Component{
-    render(){
-        return (<h3>You searched for {this.props.match.params.username}</h3>)
+class GithubUser extends Component {
+
+    state = {
+        user: {
+            avatar_url: '',
+            login: '',
+            followers: '',
+            following: '',
+            html_url: ''
+        }
+    }
+
+    constructor(props) {
+        super()
+        this.fetchUserData()
+    }
+
+    fetchUserData() {
+        fetch(`https://api.github.com/users/${this.props.match.params}`)
+            .then(response => response.json())
+            .then(user => this.setState({ user }))
+    }
+
+    render() {
+        const { user } = this.state
+        return (
+            <div className="github-user">
+                <img src={user.avatar_url} alt="user" />
+                <h2>{user.login}</h2>
+                <h3>followers: {user.followers}</h3>
+                <h3>following: {user.following}</h3>
+                <h3>location: {user.location}</h3>
+                <a href={user.html_url} target="_">Link to {user.login}'s profile</a>
+            </div>
+        )
     }
 }
 
