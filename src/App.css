@@ -1,21 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
+body {
+  font-family: "Passion One", serif;
+}
+
+h1 {
+  height: 10rem;
+  font: 60px/75px 'Passion One', cursive, sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font: 30px/40px "Passion One", serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
+.App-headings {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.nav-links a {
+  color: #02b1ff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-links a.active {
+  color: #F79824;
+}
+
+.nav-links a.active:hover {
+  color: #FDCA40;
+}
+
+.nav-links a:hover {
+  color: #0184be;
 }
 
 @keyframes App-logo-spin {

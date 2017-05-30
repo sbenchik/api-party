@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Switch, Route, NavLink } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 
@@ -7,12 +8,20 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <div className="App-headings">
+            <h3>Ain't no party like an</h3>
+            <h1>API party</h1>
+          </div>
+          <ul className="nav-links">
+            <li>
+              <NavLink to='/github'>Github API</NavLink>
+            </li>
+          </ul>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Switch>
+          <Route path='/github' render={() => <h1>GITHUB!</h1>}></Route>
+          <Route render={() => <p>To get started, click one of the links above</p>} />
+        </Switch>
       </div>
     );
   }
