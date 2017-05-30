@@ -1,17 +1,11 @@
-.github {
-    width: 80%;
-    margin: 0 auto;
+.weather-logo{
+    height: 100%;
+    max-height: 300px;
 }
 
-.github-logo {
-    width: 100%;
-    max-width: 500px;
-}
-
-.github input {
-    /*font-family: "Passion One", serif;*/
+.weather input{
     box-sizing: border-box;
-    width: 80%;
+    width: 40%;
     padding: 10px;
     font-size: 24px;
     background-clip: padding-box;
@@ -21,15 +15,14 @@
     border: 1px solid #d1d5da ;
 }
 
-.github button {
+.weather button {
     color: white;
     margin-top: 10px;
-    width: 80%;
+    width: 40%;
     padding: 10px;
     font-size: 24px;
     border-radius: 5px;
     border: 1px solid #01638f ;
     margin-bottom: 50px;
     background-color: #0184be ;
-    font-family: "Passion One", serif;
 }

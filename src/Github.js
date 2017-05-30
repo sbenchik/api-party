@@ -12,7 +12,7 @@ class Github extends Component{
 
     handleChange = (ev) => {
         const username = ev.currentTarget.value
-        this.setState({ username }, () => console.log(this.state))
+        this.setState({ username })
     }
 
     handleSubmit = (ev) => {
