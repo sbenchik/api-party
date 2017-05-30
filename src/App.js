@@ -14,6 +14,7 @@ class App extends Component {
           <div className="App-headings">
             <h3>Ain't no party like an</h3>
             <h1>API party</h1>
+            <h3>cuz an API party is asynchronous</h3>
           </div>
           <ul className="nav-links">
             <li>

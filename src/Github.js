@@ -29,7 +29,7 @@ class Github extends Component{
                         <input type="text" value={this.state.username} onChange={this.handleChange}/>
                     </div>
                     <div>
-                        <button type="submit">Look up a github user</button>
+                        <button type="submit">Look up a Github user</button>
                     </div>
                 </form>
 

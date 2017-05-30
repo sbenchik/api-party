@@ -28,7 +28,7 @@ class Weather extends Component{
                         <input type="text" value={this.state.loc} onChange={this.handleChange}/>
                     </div>
                     <div>
-                        <button type="submit">Look up the forecast</button>
+                        <button type="submit">Get the forecast</button>
                     </div>
                 </form>
 
